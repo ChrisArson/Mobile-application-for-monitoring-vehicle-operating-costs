@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu_without_bar"
+    tools:context=".cars.CarInfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCarInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="Informacje o pojeździe"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarCarInfo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonDodawanieEventu"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/button_rounded"
+                    android:fontFamily="@font/oswald_regular"
+                    android:text="Dodaj wydarzenie"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/buttonDodawanieTankowania"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded"
+                    android:fontFamily="@font/oswald_regular"
+                    android:text="Dodaj tankowanie"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:gravity="center_vertical"
+                        android:text="Przegląd:"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvInfoService"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:gravity="center_vertical"
+                        android:text="DD-MM-RRRR"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Ubezpieczenie:"
+                        android:gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvInfoInsurance"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="DD-MM-RRRR"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView79"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Do końca przeglądu"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvServiceEnd"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="0 dni"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView80"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Do końca ubezpieczenia:"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvInsuranceEnd"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="0 dni"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Koszt na 1000km "
+                        android:textColor="@color/white"
+
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvKosztNa1000"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:gravity="center_vertical"
+                        android:text="0.0"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Spalanie"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvSpalanie"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="0.0"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center"
+                android:text="Ostatnie tankowania"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvEmptyFuels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brak tankowań"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/oswald_regular"
+                android:visibility="invisible"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerFuelCarInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center"
+                android:text="Ostatnie wydarzenia"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvEmptyEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brak wydarzeń"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/oswald_regular"
+                android:visibility="invisible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerEventCarInfo"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center"
+                android:text="Nadchodzące wydarzenia"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvEmptyEventReminderEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center"
+                android:text="Brak wydarzeń"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerEventReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/buttonEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/button_rounded"
+                    android:fontFamily="@font/oswald_regular"
+                    android:text="Edytuj pojazd"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rounded"
+                    android:fontFamily="@font/oswald_regular"
+                    android:text="Usuń pojazd"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

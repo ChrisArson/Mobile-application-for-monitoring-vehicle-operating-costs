@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "494225836749",
+    "project_id": "polkar-99d95",
+    "storage_bucket": "polkar-99d95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494225836749:android:6d6a302fccc5a024cd7784",
+        "android_client_info": {
+          "package_name": "com.example.polkar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494225836749-7bl5hh5g9h7ecf09bqec840g0m46q3cm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKs2Y5qKglMuO7IQTamw2irPmwL_raOUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494225836749-7bl5hh5g9h7ecf09bqec840g0m46q3cm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

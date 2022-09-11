@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".events.EventInfoActivity"
+    android:background="@drawable/background_menu_without_bar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEventInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="Informacje o wydarzeniu"
+        app:titleTextColor="@color/white" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarEventInfo">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Typ:"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvEventInfoType"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:layout_marginStart="20dp"
+
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Data:"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvEventInfoDate"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Opis:"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvEventInfoDesc"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="end"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Kwota:"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvEventInfoPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_gravity="end"
+                android:layout_marginEnd="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Przebieg:"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvEventInfoMileage"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_gravity="end"
+                android:layout_marginEnd="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Przypomnienie:"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvEventInfoReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_gravity="end"
+                android:layout_marginEnd="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Po ilu kilometrach:"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvEventInfoReminderMileage"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal"
+            tools:layout_editor_absoluteX="-69dp"
+            tools:layout_editor_absoluteY="341dp">
+
+            <Button
+                android:id="@+id/buttonEventInfoEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edytuj" />
+
+            <Button
+                android:id="@+id/buttonEventInfoDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Usuń" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

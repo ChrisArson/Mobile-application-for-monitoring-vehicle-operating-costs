@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cars.CarEditForm"
+    android:background="@drawable/background_menu_without_bar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCarEditForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Edycja pojazdu"
+        app:titleTextColor="@color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEditAccept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarCarEditForm">
+
+        <LinearLayout
+            android:layout_width="133dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Marka:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Model: "
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Silnik:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Rodzaj paliwa:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Pojemność baku:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Przebieg:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Termin przegląd:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="end"
+                android:text="Termin ubezpieczenia:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Typ nadwozia:"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etEditBrand"
+                android:background="@drawable/edit_text_rounded"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:ems="10"
+                android:fontFamily="@font/oswald_bold"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etEditModel"
+                android:layout_width="200dp"
+                android:background="@drawable/edit_text_rounded"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etEditEngine"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/oswald_bold"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/spinnerEditFuelType"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/oswald_regular"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:popupBackground="@drawable/edit_text_rounded"
+                android:text="Name"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etEditFuelTankCapacity"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etEditMileage"
+                android:layout_width="200dp"
+                android:background="@drawable/edit_text_rounded"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etEditService"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etEditInsurance"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/spinnerEditBody"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/oswald_bold"
+                android:popupBackground="@drawable/edit_text_rounded"
+                android:text="Name"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonEditAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/oswald_regular"
+        android:text="Zapisz"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

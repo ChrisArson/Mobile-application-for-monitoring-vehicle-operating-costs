@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fuel.FuelAddForm"
+    android:background="@drawable/background_menu_without_bar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarFuelAddForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="Dodawanie tankowania"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarFuelAddForm">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center_vertical"
+                android:text="Ilość paliwa:"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center_vertical"
+                android:text="Cena za litr:"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center_vertical"
+                android:text="Przebieg:"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center_vertical"
+                android:text="Suma:"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center_vertical"
+                android:text="Spalanie:"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center_vertical"
+                android:text="Do pełna?"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center_vertical"
+                android:text="Stacja"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/fuelAddFormAmount"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/fuelAddFormPrice"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/fuelAddFormMileage"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvSum"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/fuelAddFormAverageInfo"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center"
+                android:text="0.0 L/100km"
+                android:textColor="@color/white" />
+
+            <Switch
+                android:id="@+id/switchFuelAddForm"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:gravity="center"
+                android:textColor="@color/white"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Spinner
+                android:id="@+id/spinnerFuelAddForm"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/edit_text_rounded"
+                android:minHeight="48dp"
+                android:popupBackground="@color/grey"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonAddFuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="150dp"
+        android:text="Dodaj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFuelAddForm"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="122dp"
+        android:fontFamily="@font/oswald_regular"
+        android:text="Twoje ostatnie tankowania"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerFuelAddForm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddFuel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

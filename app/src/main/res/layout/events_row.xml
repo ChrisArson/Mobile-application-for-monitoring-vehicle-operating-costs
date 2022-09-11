@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="20dp"
+    android:scrollbars="vertical"
+    app:cardCornerRadius="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/row_view"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/eventsRowDate"
+                android:layout_width="146dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="13dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/eventsCarName"
+                app:layout_constraintEnd_toStartOf="@+id/eventsRowType3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/eventsRowType"
+                android:layout_width="209dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/eventsRowPrice2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/eventsRowDate"
+                app:layout_constraintTop_toBottomOf="@+id/eventsRowType3" />
+
+            <TextView
+                android:id="@+id/eventsRowType3"
+                android:layout_width="164dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="59dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Typ:"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/eventsRowType"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/eventsRowDate"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/eventsCarName"
+                android:layout_width="155dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="28dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/eventsRowPrice2"
+                app:layout_constraintHorizontal_bias="0.318"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/eventsRowPrice2"
+                android:layout_width="159dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="71dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Kwota:"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/eventsRowPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/eventsCarName"
+                app:layout_constraintTop_toBottomOf="@+id/eventsRowType" />
+
+            <TextView
+                android:id="@+id/eventsRowPrice"
+                android:layout_width="138dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="14dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/eventsCarName"
+                app:layout_constraintTop_toBottomOf="@+id/eventsRowPrice2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

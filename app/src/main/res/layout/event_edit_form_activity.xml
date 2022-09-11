@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu_without_bar"
+    tools:context=".events.EventEditForm">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEventEditForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="Edycja pojazdu"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="352dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarEventEditForm">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Typ:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Data:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_horizontal"
+                android:text="Opis:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Kwota:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center_vertical"
+                android:text="Przebieg:"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/oswald_bold"
+                android:minHeight="48dp"
+                android:popupBackground="@color/grey"
+                android:textColor="@color/white"
+                tools:ignore="DuplicateIds,SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/eventEditDate"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:fontFamily="@font/oswald_bold"
+                android:inputType="date"
+                android:textColor="@color/white"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/eventEditDesc"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:textColor="@color/white"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/eventEditPrice"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:fontFamily="@font/oswald_bold"
+                android:inputType="number"
+                android:textColor="@color/white"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/eventEditMileage"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:fontFamily="@font/oswald_bold"
+                android:inputType="number"
+                android:textColor="@color/white"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/eventEditFormButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="162dp"
+        android:text="Zapisz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

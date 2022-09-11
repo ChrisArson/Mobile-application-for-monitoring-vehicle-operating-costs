@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginHorizontal="10dp"
+    android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/row_view"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/carInfoEventsReminderRowType2"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Typ:"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/carInfoEventsReminderRowType1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/carInfoEventsReminderRowPrice"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="11dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Kwota do ws"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/carInfoEventsReminderRowType1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/carInfoEventsReminderRowPrice2" />
+
+            <TextView
+                android:id="@+id/carInfoEventsReminderRowPrice2"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Kwota:"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/carInfoEventsReminderRowType1"
+                app:layout_constraintEnd_toStartOf="@+id/carInfoEventsReminderRowPrice"
+                app:layout_constraintStart_toEndOf="@+id/carInfoEventsReminderRowDate" />
+
+            <TextView
+                android:id="@+id/carInfoEventsReminderRowType1"
+                android:layout_width="190dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="86dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Typ do wyświetlenia"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/carInfoEventsReminderRowType2" />
+
+            <TextView
+                android:id="@+id/carInfoEventsReminderRowDate1"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="37dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Data:"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/carInfoEventsReminderRowDate"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/carInfoEventsReminderRowMileage1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="71dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Wydarzenie powtórzyć przy:"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/carInfoEventsReminderRowDate1"
+                app:layout_constraintEnd_toStartOf="@+id/carInfoEventsReminderRowMileage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/carInfoEventsReminderRowDate"
+                android:layout_width="135dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="start"
+                android:text="data do ws"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/carInfoEventsReminderRowType2"
+                app:layout_constraintEnd_toStartOf="@+id/carInfoEventsReminderRowPrice2"
+                app:layout_constraintStart_toEndOf="@+id/carInfoEventsReminderRowDate1" />
+
+            <TextView
+                android:id="@+id/carInfoEventsReminderRowMileage"
+                android:layout_width="135dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="center"
+                android:text="mileage do ws"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/carInfoEventsReminderRowPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/carInfoEventsReminderRowMileage1"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

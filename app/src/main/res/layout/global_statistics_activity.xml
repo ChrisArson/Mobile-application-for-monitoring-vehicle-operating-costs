@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".statistics.GlobalStatistics"
+    android:background="@drawable/background_menu_without_bar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarGlobalStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="Statystyki globalne dla pojazdu"
+        app:titleTextColor="@color/white" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarGlobalStatistics">
+
+        <TextView
+            android:id="@+id/tvGlobalStatCarName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/oswald_regular"
+            android:gravity="center"
+            android:text="Nazwa pojazdu"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarType"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="end"
+                android:text="Typ zdarzenia"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarPrice1000km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_bold"
+                android:text="Koszt na 1000km"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarRepair1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="end"
+                android:text="Naprawa:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarRepair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="0 zł"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarChangeParts1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="end"
+                android:text="Wymiana części eksploatacyjnych:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarChangeParts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/oswald_regular"
+                android:text="0 zł"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarChangeOil1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="end"
+                android:text="Wymiana olejów i filtrów:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarChangeOil"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/oswald_regular"
+                android:text="0.0 zł"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:gravity="center_vertical"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarAnother1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="end"
+                android:text="Inne:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarAnother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="0.0 zł"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarAverage1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="end"
+                android:text="Średnia:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="0.0 zł"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/tvGlobalStatFuelUsage1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/oswald_bold"
+            android:gravity="center"
+            android:text="Spalanie"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_bold"
+                android:gravity="end"
+                android:text="Rodzaj paliwa"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_bold"
+                android:text="L/100km"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarPB1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="end"
+                android:text="Benzyna"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarPB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarON1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="end"
+                android:text="Diesel"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarLPG1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="end"
+                android:text="LPG"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarLPG"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/oswald_regular"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarCNG1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="end"
+                android:text="CNG"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvGlobalStatCarCNG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

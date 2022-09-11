@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu_without_bar"
+    tools:context=".menu.MainPanelActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMainPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_menu1"
+        app:title="Witaj "
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvEmptyCarList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald_regular"
+        android:gravity="center"
+        android:text="Brak pojazdów do wyświetlenia"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMainPanel"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" />
+
+    <Button
+        android:id="@+id/buttonDodawanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rounded"
+        android:fontFamily="@font/oswald_regular"
+        android:text="Dodaj pojazd"
+        android:gravity="center"/>
+
+</LinearLayout>

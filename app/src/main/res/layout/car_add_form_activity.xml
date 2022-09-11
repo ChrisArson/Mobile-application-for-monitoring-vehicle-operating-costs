@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_menu_without_bar"
+    tools:context=".cars.CarAddForm">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCarAddForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Dodawanie pojazdu"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarCarAddForm">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="405dp"
+            android:layout_height="588dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCarAdd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.797">
+
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="270dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="Marka:"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/caraddvalue"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:fontFamily="@font/oswald_regular"
+                android:hint="Reanult"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="270dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="Model:"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/caraddvalue"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:fontFamily="@font/oswald_regular"
+                android:hint="Clio"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="270dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="Silnik:"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etEngine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/caraddvalue"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:fontFamily="@font/oswald_regular"
+                android:hint="1.3"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="270dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="Rodzaj paliwa:"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/spinnerFuelType"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/caraddvalue"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:popupBackground="@drawable/edit_text_rounded"
+                android:fontFamily="@font/oswald_regular"
+                android:hint="Spinner rodzaj paliwa"
+                android:spinnerMode="dropdown"
+                android:minHeight="48dp"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etInsurance"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:text="Pojemnosc baku:"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etFuelTankCapacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/caraddvalue"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:fontFamily="@font/oswald_regular"
+                android:hint="Pojemnosc baku"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="270dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_regular"
+                android:text="Przebieg:"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etMileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/caraddvalue"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:fontFamily="@font/oswald_regular"
+                android:hint="248032"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="270dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etService"
+                android:fontFamily="@font/oswald_regular"
+                android:text="Data końca przeglądu:"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etService"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:layout_margin="@dimen/caraddvalue"
+                android:fontFamily="@font/oswald_regular"
+                android:hint="DD-MM-RR"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etInsurance"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/oswald_regular"
+                android:text="Data końca ubezpieczenia:"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/etInsurance"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/etService"
+                android:ems="10"
+                android:layout_margin="@dimen/caraddvalue"
+                android:background="@drawable/edit_text_rounded"
+                android:fontFamily="@font/oswald_regular"
+                android:hint="DD-MM-RR"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="270dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/etInsurance"
+                android:fontFamily="@font/oswald_regular"
+                android:text="Data końca ubezpieczenia:"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/spinnerBody"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/caraddvalue"
+                android:background="@drawable/edit_text_rounded"
+                android:ems="10"
+                android:fontFamily="@font/oswald_regular"
+                android:hint="Spinner nadwozie"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:popupBackground="@drawable/edit_text_rounded"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <Button
+                android:id="@+id/buttonCarAdd"
+                android:layout_width="150dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:fontFamily="@font/oswald_regular"
+                android:text="Dodaj"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

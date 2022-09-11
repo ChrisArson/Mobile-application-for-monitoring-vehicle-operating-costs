@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userauth.SettingsActivity"
+    android:background="@drawable/background_menu_without_bar">
+
+    <Button
+        android:id="@+id/buttonSavePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zmień hasło"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSettingsActivity"
+        app:layout_constraintVertical_bias="0.671" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/oswald_regular"
+        android:gravity="center"
+        android:text="Nowe hasło:"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView72"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <EditText
+        android:id="@+id/editPassword2"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edit_text_rounded"
+        android:ems="10"
+        android:fontFamily="@font/oswald_regular"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSettingsActivity"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald_regular"
+        android:text="Powtórz hasło:"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSettingsActivity"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <EditText
+        android:id="@+id/editPassword1"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edit_text_rounded"
+        android:ems="10"
+        android:fontFamily="@font/oswald_regular"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSettingsActivity"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <Button
+        android:id="@+id/buttonSaveName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zmień nazwę"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSettingsActivity"
+        app:layout_constraintVertical_bias="0.671" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edit_text_rounded"
+        android:ems="10"
+        android:fontFamily="@font/oswald_regular"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSettingsActivity"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/oswald_regular"
+        android:gravity="center"
+        android:text="Nowa nazwa użytkownika:"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView72"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSettingsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="Ustawienia"
+        app:titleTextColor="@color/white" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSettingsActivity">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonChangeName"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="10dp"
+
+                android:text="Zmień nazwę użytkownika" />
+
+            <Button
+                android:id="@+id/buttonChangePasswrd"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:text="Zmień hasło" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttonLogOut"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="10dp"
+                android:text="Wyloguj" />
+
+            <Button
+                android:id="@+id/buttonDeleteAccount"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:text="Usuń konto" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

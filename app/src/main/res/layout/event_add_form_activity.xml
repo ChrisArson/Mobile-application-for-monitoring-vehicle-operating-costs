@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".events.EventAddForm"
+    android:background="@drawable/background_menu_without_bar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEventAddForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:title="Dodawanie wydarzenia"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarEventAddForm">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_regular"
+            android:text="Typ:"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/spinnerEventAddForm"
+            android:layout_width="270dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_rounded"
+            android:minHeight="48dp"
+            android:popupBackground="@color/grey"
+            android:textColor="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_regular"
+            android:text="Data:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/eventAddDate"
+            android:layout_width="270dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_rounded"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_regular"
+            android:text="Opis:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/eventAddDesc"
+            android:layout_width="270dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_rounded"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_regular"
+            android:text="Kwota:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/eventAddPrice"
+            android:layout_width="270dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_rounded"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_regular"
+            android:text="Przebieg:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/eventAddMileage"
+            android:layout_width="270dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_rounded"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Switch
+            android:id="@+id/switchEventAddForm"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/oswald_regular"
+            android:text="Ustaw wydarzenie cykliczne"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_regular"
+            android:text="Po ilu kilometrach przypomnieć:"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/eventAddMileageReminder"
+            android:layout_width="270dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_rounded"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/eventAddFormButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

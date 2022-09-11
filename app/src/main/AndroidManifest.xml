@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.polkar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Polkar">
+        <activity
+            android:name=".statistics.GlobalStatistics"
+            android:exported="false" />
+        <activity
+            android:name=".statistics.GlobalStatisticsModelSelection"
+            android:exported="false" />
+        <activity
+            android:name=".statistics.CarStatistics"
+            android:exported="false" />
+        <activity
+            android:name=".statistics.CarStatisticsSelection"
+            android:exported="false" />
+        <activity
+            android:name=".statistics.UserStatistics"
+            android:exported="false" />
+        <activity
+            android:name=".userauth.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".statistics.GlobalStatisticsBrandSelection"
+            android:exported="false" />
+        <activity
+            android:name=".statistics.FuelStationStatistics"
+            android:exported="false" />
+        <activity
+            android:name=".menu.MainPanelCarInfo"
+            android:exported="false" />
+        <activity
+            android:name=".fuel.FuelAddForm"
+            android:exported="false" />
+        <activity
+            android:name=".fuel.FuelCarSelection"
+            android:exported="false" />
+        <activity
+            android:name=".events.EventInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".events.EventEditForm"
+            android:exported="false" />
+        <activity
+            android:name=".events.EventListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".events.EventAddForm"
+            android:exported="false" />
+        <activity
+            android:name=".events.EventCarSelection"
+            android:exported="false" />
+        <activity
+            android:name=".cars.CarEditForm"
+            android:exported="false" />
+        <activity
+            android:name=".cars.CarInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cars.CarAddForm"
+            android:exported="false" />
+        <activity
+            android:name=".cars.CarsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.MainMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userauth.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menu.MainPanelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userauth.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

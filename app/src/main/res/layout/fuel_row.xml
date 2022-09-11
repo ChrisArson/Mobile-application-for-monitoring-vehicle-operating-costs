@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/row_view"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_bold"
+            android:text="Ilość:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvFuelAddAmount"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_bold"
+            android:text="0.0"
+            android:textColor="@color/white"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_bold"
+            android:text="Suma:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvFuelAddPrice"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_bold"
+            android:text="0.0"
+            android:textColor="@color/white"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_bold"
+            android:text="Spalanie:"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvFuelAddAverage"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_bold"
+            android:text="0.0"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
